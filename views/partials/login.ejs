@@ -7,23 +7,13 @@
     <link rel="stylesheet" type="text/css" href="login.css">
     <link rel= "stylesheet" type="text/css" href="typology.css">
     <link rel= "stylesheet" type="text/css" href="resets.css">
+    <%- include('./partials/header.ejs'); %>
     <title>Customer Login</title>
 </head>
 
   <body>
-    <header>
-        <!--I couldn't get this logo from fontawesome to work-->
-            <li><i class="fas fa-map-marked-alt"></i></li>
-            <h1><a href=index.html>TE Travel Experts</a></h1>
-        <nav>
-            <ul>
-                <li><a href=index.html>Home</a></li>
-                <li><a href=register.html>Register</a></li>
-            </ul>
-        </nav>
-    </header>
-        <!--customer login form-->
-    <form action="https://www.w3schools.com/action_page.php" method="POST" target="_blank">
+    
+    <main><form action="https://www.w3schools.com/action_page.php" method="POST" target="_blank">
         <fieldset
             style="background-color: rgb(36, 157, 173);width: 200px;margin: 20px;padding: 30px; justify-content: center; font-family: Kaushan Script; ">
             <legend>CUSTOMER LOGIN</legend>
@@ -36,7 +26,9 @@
         <br><br>
         <input type="reset" value="Reset" &nbsp;&nbsp;&nbsp;&nbsp;>
         <input type="submit" value="Submit">
-
+    </main>    <!--customer login form-->
+    
+<%- include('./partials/footer.ejs'); %>
         
 
 </body>
